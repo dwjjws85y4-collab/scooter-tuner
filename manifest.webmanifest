@@ -1,0 +1,26 @@
+{
+  "name": "Scooter Tuner — G3 Max · F3 Pro · ZT3",
+  "short_name": "Scooter Tuner",
+  "description": "Firmware-Dateien bauen und pruefen fuer Ninebot G3 Max, F3 Pro und ZT3 Pro.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070B14",
+  "theme_color": "#070B14",
+  "lang": "de",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
