@@ -1,26 +1,81 @@
 {
   "name": "Scooter Tuner — G3 Max · F3 Pro · ZT3",
   "short_name": "Scooter Tuner",
-  "description": "Firmware-Dateien bauen und pruefen fuer Ninebot G3 Max, F3 Pro und ZT3 Pro.",
+  "description": "Firmware-Dateien bauen und pruefen fuer Ninebot G3 Max, F3 Pro und ZT3 Pro. Laeuft im Browser, ohne Server.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
   "orientation": "portrait",
   "background_color": "#070B14",
   "theme_color": "#070B14",
   "lang": "de",
+  "dir": "ltr",
+  "categories": [
+    "utilities",
+    "productivity"
+  ],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
   "icons": [
     {
-      "src": "icon.png",
-      "sizes": "180x180",
+      "src": "icon-192.png",
+      "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icon.png",
-      "sizes": "180x180",
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512-maskable.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "shortcuts": [
+    {
+      "name": "Datei pruefen oder senden",
+      "short_name": "Datei",
+      "url": "./?los=datei",
+      "description": "Was steckt wirklich drin - und an den Roller schicken"
+    },
+    {
+      "name": "Welcher Roller ist das?",
+      "short_name": "Roller",
+      "url": "./?los=roller",
+      "description": "Verbinden und nachsehen, ohne etwas zu aendern"
+    },
+    {
+      "name": "Rettungsdatei bauen",
+      "short_name": "Rettung",
+      "url": "./?los=rettung",
+      "description": "Stock-Firmware neu verpacken, zum Zurueckholen"
+    }
+  ],
+  "share_target": {
+    "action": "./?geteilt=1",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [
+        {
+          "name": "datei",
+          "accept": [
+            "application/zip",
+            "application/octet-stream",
+            ".zip"
+          ]
+        }
+      ]
+    }
+  }
 }
