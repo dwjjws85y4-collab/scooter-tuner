@@ -1,6 +1,6 @@
 {
-  "name": "Scooter Tuner — G3 Max · F3 Pro · ZT3",
-  "short_name": "Scooter Tuner",
+  "name": "CFW Tuner — G3 Max · F3 Pro · ZT3",
+  "short_name": "CFW Tuner",
   "description": "Firmware-Dateien bauen und pruefen fuer Ninebot G3 Max, F3 Pro und ZT3 Pro. Laeuft im Browser, ohne Server.",
   "start_url": ".",
   "scope": ".",

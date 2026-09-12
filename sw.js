@@ -1,9 +1,9 @@
 /* erzeugt von build_app.py - nicht von Hand aendern */
-const ABLAGE='scooter-tuner-651034';
+const ABLAGE='cfw-tuner-651448';
 const SEITE='./index.html';
 const DATEIEN=['./',SEITE,'./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-512-maskable.png'];
 const FRIST=4000;                 /* so lange wird auf das Netz gewartet */
-const GETEILT='scooter-tuner-geteilt';   /* Ablage nur fuer eine geteilte Datei */
+const GETEILT='cfw-tuner-geteilt';   /* Ablage nur fuer eine geteilte Datei */
 
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(ABLAGE).then(c=>c.addAll(DATEIEN)).then(()=>self.skipWaiting()));
