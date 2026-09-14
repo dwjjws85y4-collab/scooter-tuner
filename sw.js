@@ -1,5 +1,5 @@
 /* erzeugt von build_app.py - nicht von Hand aendern */
-const ABLAGE='cfw-tuner-894276-64e5fd85';
+const ABLAGE='cfw-tuner-904719-f517c466';
 const SEITE='./index.html';
 const DATEIEN=['./',SEITE,'./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-512-maskable.png'];
 const FRIST=4000;                 /* so lange wird auf das Netz gewartet */
